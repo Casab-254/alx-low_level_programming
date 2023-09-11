@@ -1,19 +1,22 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
 /**
  * main - Generate random numbers to detect either if -ve or +ve
  *
  * Return: always (0)
- *
  */
 int main(void)
 {
 	int n;
 
 	srand(time(0));
-	n = rand() - RAND_MAX / 2;
+	n = rand() - (int)((double)RAND_MAX / 2.0);
+
 	if (n > 0)
 	{
-		prinf("%d is positive\n", n);
+		printf("%d is positive\n", n);
 	}
 	else if (n == 0)
 	{

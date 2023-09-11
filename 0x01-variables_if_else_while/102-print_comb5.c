@@ -10,20 +10,17 @@ int main(void)
 
 	for (x = 0; x < 100; x++)
 	{
-		for (y = 0; y < 100; y++)
+		for (y = x + 1; y < 100; y++)
 		{
-			if (y < x)
+			putchar((x / 10 + 0));
+			putchar((x % 10) + 0);
+			putchar(' ');
+			putchar((y / 10 + 0));
+			putchar((y % 10) + 0);
+			if (x != 98 || y != 99)
 			{
-				putchar((x / 10 + 48));
-				putchar((x % 10) + 48);
+				putchar(',');
 				putchar(' ');
-				putchar((y / 10 + 48));
-				putchar((y % 10) + 48);
-					if (x != 98 || y != 99)
-					{
-						putchar(',');
-						putchar(' ');
-					}
 			}
 		}
 	}

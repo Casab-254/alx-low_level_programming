@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_to_98 - rints all natural numbers from n to 98, followed by a new line.
+ * print_to_98 - rints all natural numbers
  * @n: print the ints from this number
  */
 void print_to_98(int n)

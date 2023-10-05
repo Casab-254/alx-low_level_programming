@@ -1,42 +1,19 @@
-#include "main.h"
+#include <stdio.h>
 /**
- *  _strcat - function that concatenates two strings
- *  @dest: entered value
- *  @src: entered value
- *
- *  Return: void
+ * _memset - fills memory to another
+ * @s: points a variable
+ * @b: used as a filler
+ * @n: number of times to fill
+ * Return: s after success
  */
 
-
-char *_strcat(char *dest, char *src)
+char *_memset(char *s, char b, unsigned int n)
 {
-	int a;
+	unsigned int i;
 
-	int b;
-
-	a = 0;
-
-	while (dest[a] != '\0')
+	for (i = 0; i < n; i++)
 	{
-		a++;
+		s[i] = b;
 	}
-	b = 0;
-
-
-	while (src[b] != '\0')
-
-	{
-
-
-		dest[a] = src[b];
-
-
-		a++;
-
-		b++;
-
-	}
-
-	dest[a] = '\0';
-	return (dest);
+	return (s);
 }

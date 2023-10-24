@@ -1,27 +1,27 @@
-#include  <stdio.h>
+#include "main.h"
 /**
- * _strncpy - copies a string
- * @dest: first string to be coppied
- * @src: second string to be coppied
- * @n: number of times to be coppied
- * Return: to return a string
+ * _strncpy - copy a string
+ * @dest: input value
+ * @src: input value
+ * @n: input value
+ *
+ * Return: dest
  */
-char *_strncpy(char *dest, char *src, int n)
+char *_strncpy(char *dest, char *src, int x)
 {
-	char *destPosition = dest;
+        	int y;
 
-	while (*src != '\0' && n > 0)
-	{
-		*dest = *src;
-		dest++;
-		src++;
-		n--;
-	}
-	while (n > 0)
-	{
-		*dest = '\0';
-		dest++;
-		n--;
-	}
-	return (destPosition);
+        	y = 0;
+        	while (y < n && src[y] != '\0')
+        	{
+                    	dest[y] = src[y];
+                    	y++;
+        	}
+        	while (y < x)
+        	{
+                    	dest[y] = '\0';
+                    	y++;
+        	}
+
+        	return (dest);
 }

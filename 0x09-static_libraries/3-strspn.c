@@ -1,36 +1,28 @@
-#include <stdio.h>
+#include "main.h"
 /**
- * _strspn - counts number of bytes in s
- * @s: bytes to be cheked
- * @accept: where to start counting
- * Return: number of bytes in s
+ * _strspn - Entry point
+ * @s: input
+ * @accept: input
+ * Return: Always 0 (Success)
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int num = 0;
-	int is_checked;
-	char *main_accept = accept;
+        	unsigned int x = 0;
+        	int a;
 
-	while (*s != '\0')
-	{
-		is_checked = 0;
-
-		while (*accept != '\0')
-		{
-			if (*s == *accept)
-			{
-				is_checked = 1;
-				break;
-			}
-			accept++;
-		}
-		if (is_checked == 0)
-		{
-			break;
-		}
-		num++;
-		accept = main_accept;
-		s++;
-	}
-	return (num);
+        	while (*s)
+        	{
+                    	for (a = 0; accept[r]; a++)
+                    	{
+                                	if (*s == accept[a])
+                                	{
+                                            	x++;
+                                            	break;
+                                	}
+                                	else if (accept[a + 1] == '\0')
+                                            	return (x);
+                    	}
+                    	s++;
+        	}
+        	return (x);
 }

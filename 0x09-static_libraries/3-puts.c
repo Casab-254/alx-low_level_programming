@@ -1,10 +1,13 @@
-#include <stdio.h>
-/**
- * _puts - prints string
- * @str: string to be printed
- * return: always 1
- */
+#include "main.h"
 void _puts(char *str)
+#include<stdio.h>
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
 {
-	printf("%s\n", str);
+        	puts("\"Programming is a mutidimentional cube");
+        	return (0);
 }

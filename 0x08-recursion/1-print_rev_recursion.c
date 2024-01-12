@@ -1,9 +1,14 @@
 #include "main.h"
-/*
- *
- *
- *
- */
+#include "main.h"
+
+/**
+  * _print_rev_recursion - main function
+  *
+  * @s: Function parameter
+  * @c:the limits within which the function operates
+  * Return: Void
+  */
+
 #include <stddef.h>
 
 void _putchar(char c);
@@ -16,5 +21,3 @@ void _print_rev_recursion(char *s)
 		_putchar(*s);
 	}
 }
-
-/* _putchar implementation is not provided, so you'll need to implement it yourself */

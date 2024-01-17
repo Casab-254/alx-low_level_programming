@@ -1,24 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
- * main - prints a product of two args
- * @argc: counts num of args
- * @argv: checks argc snum
- * Return: 0 after success
+ * main - prints the product of two arguments
+ * @argc: counts the number of arguments
+ * @argv: array of argument strings
+ * Return: 0 on success, 1 on error
  */
 int main(int argc, char *argv[])
 {
-	int k;
+    int k;
 
-	if (argc != 3)
-	{
-		printf("Error\n");
-		return (1);
-	}
-	else
-	{
-		m = (atoi(argv[1]) * atoi(argv[2]));
-		printf("%d\n", k);
-	}
-	return (0);
+    if (argc != 3)
+    {
+        printf("Error\n");
+        return (1);
+    }
+    else
+    {
+        k = (atoi(argv[1]) * atoi(argv[2]));
+        printf("%d\n", k);
+    }
+    return (0);
 }
